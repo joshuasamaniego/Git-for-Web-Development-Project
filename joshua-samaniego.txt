@@ -1,0 +1,112 @@
+https://codepen.io/joshua-sam/pen/zYqEYBZ?editors=1100
+
+    1. What is Semantic HTML? 
+    -  Semantic HTML is the use of HTML for information purposes, rather than presentation purposes. 
+    2. What is HTML used for? 
+    - HTML is used for the functional structure of the a webpage.  
+    3. What is an attribute and where do we put it? 
+    - An attribute is something included in the start tag of an element, usually formatted in a key/value pair, that describes additional information about that element. AKA image sources. 
+    4. What is the h1 tag used for? How many times should I use it on a page?
+    - The h1 tage is used as the main header of the webpage. It should only be used once per page. 
+    5. Name two tags that have required attributes
+    -  <img>, <a>, <html>
+    6. What do we put in the head of our HTML document? 
+    - If this is talking about the <head> sectiono of a webpage then it should include metadata, but if this means more about the <body> section of a webpage then it should include things like the title and navigation headers.
+    7. What is an id? 
+    - An ID is a type of unique value put on an element.
+    8. What elements can I add an id to? 
+    - Any element.
+    9. How many times can I use the same id on a page? 
+    - They should only appear once. ID's are meant to be unique to a specific element. 
+    10. What is a class? 
+    - A class is another type of identifier, similar to an ID however you can use the same class to describe multiple elements or many classes to describe the same element. 
+    11. What elements can I add a class to? 
+    - Any HTML element. 
+    12. How many times can I use the same class on a page? 
+    - As many times as needed. 
+    13. How do I get my link to open in a new tab?
+    - target="_blank"
+    14. What is the alt attribute in the image tag used for? 
+    - This provides descriptive information about the image, in case it can't be view for some reason.
+    15. How do I reference an id?
+    - In CSS, you 'call' and id by using #id_name {}
+    16. What is the difference between a section and a div
+    - A <section> tag describes sections in an HTML document, like a <header> or <footer>, while a <div> tag provides an appropriate division in a section. That way you can format certain aspects of a section more precisely. 
+    17. What is CSS used for? 
+    - It is used to style the HTML of a webpage.
+    18. How to we select an element? Example - every h2 on the page
+    - In CSS, we selcet an element like this: h2 {}
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one.
+    - The difference between a class and an id is that an id is a specific identifier to an element that can only be used once per page, whereas a class can be used multiple times across elements. 
+    20. How do we select classes in CSS?
+    - By using a hardstop. Example: .class_name {}
+    21. How do we select a p element with a single class of “human””?
+    - .human {} or p human {}
+    22. What is a parent child selector? When would this be useful? 
+    - This selector is a way to identify an subelement through its parent element to be styled or called. This would be useful for trying to identify or style a specific element nested many times deep within a bigger element. Example: 
+    p div span {}
+    23. How do you select all links within a div with the class of sidebar?
+    - .sidebar a {}
+    24. What is a pseudo selector?
+    - This is used to describe a special state of an element. 
+    25. What do we use the change the spacing between lines?
+    - line-height:value;
+    26. What do we use to change the spacing between letters?
+    - letter-spacing:value;
+    27. What do we use to change everything to CAPITALS? lowercase? Capitalize?
+    - text-transform:uppercase;
+    - text-transform:lowercase;
+    - text-transform:capitalize;
+    28. How do I add a 1px border around my div that is dotted and black?
+    - border: 1px dotted black;
+    29. How do I select everything on the page? 
+    - By using *{}
+    30. How do I write a comment in CSS?
+    - /*Comment here*/
+    31. How do I find out what file I am in, when I am using the command line? 
+    - pwd
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+    - ls
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    - rm. Be careful this because it is a permanent and automatic delete with no notice.
+    34. Why should I use version control? 
+    - You should use version control because this will allow you to recall and go back to older versions of your code, perhaps in a situation where it was working. 
+    35. How often should I commit to github?
+    - As often as possible.
+    36. What is the command we would use to push our repo up to github?
+    - git push -u origin branch-name
+    37. Walk me through Lambda's git flow. 
+    - First create your own version of the repo by forking. (Your name should now be in front of the repo.)
+    - Then, add your TL as a collaborator.
+        - Settings -> Manage Access -> Invite A Collaborator
+    - Then clone your repo, by using Github's clone or download button.
+    - Then go back to your terminal, and use pwd/cd to locate where you want to clone your forked repo.
+    - Then use git clone <repo-link> command to clone the repo to the directory you are in.
+    - Next, cd in the newly created repo by using cd <repo-name>.
+    - Then use the command git checkout -b 'firstname-lastname' to create a branch for this repo where you'll be doing your individual work. (You can also create your own files within this directory at this point to make work-flow easier.)
+    - Next, do your assignment on your branched repo. Use the shorthand command code . to open up VS Code from there and start on your project.
+    - Once finished, add and commit changes to your branch by going back and using the terminal.
+        - type: git add . to add repo changes and make them prepped for committing
+        - then type: git commit -m "Desriptive message about specific changes made" and this will commit the changes you've made along with that helpful comment. 
+    - Next, PUSH your changes back up to the Github repo by using the command: git push -u origin branch-name (which for today should be firstname-lastname, otherwise it's just whatever name you used for your specific branch at that time.)
+    - After this, it's time to submit a pull request (PR), by going back to YOUR forked project repo on github and then click on Branch:master. Once in the dropdown, select your branch-name and click the New Pull Request button to make a pull request on your name branch.
+    - Once you're redirected to the pull request page, DO NOT CLICK the 'Create Pull Request' button until you click the dropdown button that says 'base repository' and change it to YOUR forked repo, instead of the Lambda repo. (Note: it defaults to the Lambda repo.)
+    - Then, add your TL to the 'Reviewers' and then submit the pull request. Also, make sure NOT to merge your own pull request, as your TL will merge the PR (pull request) after they've reviewed it.
+    - Then drink some coffee, you done.
+
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+    - a block element starts on a new line and takes up the full width available (for example, <div>), while an inline element does NOT start on a new line and only takes up as much width as necessary (for example, <span>).
+    2. What happens when an element is positioned absolutely? 
+    - Its position becomes dependent on the nearest positioned ancestor.
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    - Put a <span> around it. 
+    4. Name 3 elements that are display block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default.
+    - Default display:block = <p>, <nav>, <h1, h2, h3, etc>
+    - Default display:inline = <map>, <output>
+    - Default display:inline-block = <img>
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+    - The 'box model' is just a box that surronds every HTML element that consists of: Margin(outermost), Border(barrier between padding and content from margin), Padding(hugs the content), and then the Content(innermost).
+    - Don't know if I completely understand the question, but I think of this like a budget of width that you allocate to each aspect of the box model. For instance, if you give an element a width of 20px, then that 20px (depending on your specifications) can then be divided amongst the content width + left and right padding + left and right border + left and right margin. 
